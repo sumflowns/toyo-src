@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Order_setting {
+    int64 id = 1; //
+    int64 flash_order_overtime = 2; //  '秒杀订单超时关闭时间(分)',
+    int64 normal_order_overtime = 3; //  '正常订单超时时间(分)',
+    int64 confirm_overtime = 4; // '发货后自动确认收货时间（天）',
+    int64 finish_overtime = 5; //  '自动完成交易时间，不能申请售后（天）',
+    int64 comment_overtime = 6; // '订单完成后自动好评时间（天）',
+}

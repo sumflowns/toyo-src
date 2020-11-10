@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.surprise.shop.srv.order;
+import "order/order.proto";
+
+service OrderService {
+    //下单
+    rpc NewDirectOrder (In_NewDirectOrder) returns (Out_NewOrder) {
+    }
+    //获取订单
+    rpc GetOrder (In_GetOrder) returns (Out_GetOrder) {
+    }
+    //获取订单列表
+    rpc GetOrderList (In_GetOrderList) returns (Out_GetOrderList) {
+    }
+}

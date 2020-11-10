@@ -8,6 +8,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="GOROOT" path="D:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -30,6 +33,22 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RunManager">
+    <configuration name="go test toyo-src" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="toyo-src" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.go test toyo-src" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -42,6 +61,7 @@
       <updated>1604993404157</updated>
       <workItem from="1604993412501" duration="439000" />
       <workItem from="1604993942165" duration="99000" />
+      <workItem from="1604995045352" duration="684000" />
     </task>
     <servers />
   </component>
@@ -65,9 +85,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604993997624" />
-    <state x="467" y="144" width="601" height="536" key="find.popup" timestamp="1604993835308">
+    <state x="467" y="144" width="601" height="536" key="find.popup" timestamp="1604995126393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="144" width="601" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1604993835308" />
+    <state x="467" y="144" width="601" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1604995126393" />
   </component>
 </project>

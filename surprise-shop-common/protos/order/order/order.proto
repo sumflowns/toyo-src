@@ -1,0 +1,143 @@
+syntax = "proto3";
+
+
+
+service OrderService {
+    //下单
+    rpc NewDirectOrder (In_NewDirectOrder) returns (Out_NewOrder) {
+    }
+    //
+    //获取订单
+    rpc GetOrder (In_GetOrder) returns (Out_GetOrder) {
+    }
+
+    //获取订单列表
+    rpc GetOrderList (In_GetOrderList) returns (Out_GetOrderList) {
+    }
+
+}
+
+message Order {
+    string id = 1; //订单ID
+    int64 member_id = 2;
+    int64 coupon_id = 3;
+    string order_sn = 4;
+    string create_time = 5;
+    string member_username = 6;
+    float total_amount = 7; //订单总金额
+    float pay_amount = 8; //应付金额（实际支付金额）
+    float freight_amount = 9; //运费金额
+    float promotion_amount = 10; //促销优化金额（促销价、满减、阶梯价）
+    float integration_amount = 11; //积分抵扣金额
+    float coupon_amount = 12; //优惠券抵扣金额
+    float discount_amount = 13; //管理员后台调整订单使用的折扣金额
+    int64 pay_type = 14; //支付方式：0->未支付；1->支付宝；2->微信
+    int64 source_type = 15; //订单来源：0->PC订单；1->app订单
+    int64 status = 16; //订单状态：0->待付款；1->待发货；2->已发货；3->已完成；4->已关闭；5->无效订单
+    int64 order_type = 17; //订单类型：0->正常订单；1->秒杀订单
+    string delivery_company = 18; //物流公司(配送方式)
+    string delivery_sn = 19; //物流单号
+    int64 auto_confirm_day = 20; //自动确认时间（天）
+    int64 integration = 21; //可以获得的积分
+    int64 growth = 22; //可以活动的成长值
+    string promotion_info = 23; //活动信息
+    int64 bill_type = 24; //发票类型：0->不开发票；1->电子发票；2->纸质发票
+    string bill_header = 25; //发票抬头
+    string bill_content = 26; //发票内容
+    string bill_receiver_phone = 27; //收票人电话
+    string bill_receiver_email = 28; //收票人邮箱
+    string receiver_name = 29; //收货人姓名
+    string receiver_phone = 30; //收货人电话
+    string receiver_post_code = 31; //收货人邮编
+    string receiver_province = 32; //省份/直辖市
+    string receiver_city = 33; //城市
+    string receiver_region = 34; //区
+    string receiver_detail_address = 35;
+    string note = 36; //订单备注
+    int64 confirm_status = 37; //确认收货状态：0->未确认；1->已确认
+    int64 delete_status = 38; //删除状态：0->未删除；1->已删除
+    int64 use_integration = 39; //下单时使用的积分
+    string payment_time = 40; //支付时间
+    string delivery_time = 41; //发货时间
+    string receive_time = 42; //确认收货时间
+    string comment_time = 43; //评价时间
+    string modify_time = 44; //修改时间
+}
+
+
+message Order_item {
+    string id = 1; //
+    string order_id = 2; //  '订单id',
+    string order_sn = 3; //  '订单编号',
+    string product_id = 4; //
+    string product_pic = 5; //
+    string product_name = 6; //
+    string product_brand = 7; //
+    string product_sn = 8; //
+    float product_price = 9; //  '销售价格',
+    int64 product_quantity = 10; // '购买数量',
+    int64 product_sku_id = 11; //'商品sku编号',
+    string product_sku_code = 12; //  '商品sku条码',
+    int64 product_category_id = 13; //  '商品分类id',
+    string sp1 = 14; // '商品的销售属性',
+    string sp2 = 15; //
+    string sp3 = 16; //
+    string promotion_name = 17; // '商品促销名称',
+    float promotion_amount = 18; // '商品促销分解金额',
+    float coupon_amount = 19; //  '优惠券优惠分解金额',
+    float integration_amount = 20; //  '积分优惠分解金额',
+    float real_amount = 21; //  '该商品经过优惠后的分解金额',
+    int64 gift_integration = 22; //
+    int64 gift_growth = 23; //
+    string product_attr = 24; // '商品销售属性:[{"key":"颜色","value":"颜色"},{"key":"容量","value":"4G"}]',
+}
+
+//直接下单，不走购物车，此时商品只有一种
+message In_NewDirectOrder {
+    int64 member_id = 1;
+    string product_id = 2;
+    int64 sku_id = 3;
+    //先不考虑优惠券
+    int64 num = 4; //购买数量
+}
+
+message Out_NewOrder {
+    int32 error_code = 1;
+    string error_message = 2;
+    string order_sn = 3;
+}
+
+message In_GetOrder {
+    string str = 1;
+    string order_sn = 2;
+}
+
+message Order_details {
+    Order order = 3;
+    repeated Order_item Order_item_list = 4;
+}
+
+message Out_GetOrder {
+    int32 error_code = 1;
+    string error_message = 2;
+    Order_details order_details = 3;
+}
+
+message In_GetOrderList {
+    int64 limit = 1;
+    int64 pages = 2;
+    string search_key = 3;
+    string start_time = 4;
+    string end_time = 5;
+}
+
+message Out_GetOrderList {
+    int32 error_code = 1;
+    string error_message = 2;
+    int64 limit = 3;
+    int64 pages = 4;
+    int64 total = 5;
+    repeated Order_details order_details_list = 6;
+}
+
+

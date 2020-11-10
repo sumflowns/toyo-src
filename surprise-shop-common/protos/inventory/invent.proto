@@ -1,0 +1,134 @@
+syntax = "proto3";
+import "inventory/inventory.proto";
+import "product/product.proto";
+import "brand/brand.proto";
+import "product_category/product_category.proto";
+import "product_attribute_category/product_attribute_category.proto";
+import "product_attribute/product_attribute.proto";
+import "product_sku_stock/product_sku_stock.proto";
+package com.surprise.shop.srv.invent;
+//surprise-shop/inventory-srv/proto/
+service ProductHandler {
+    //获取信息
+    rpc GetProductById (product.In_GetProductById) returns (product.Out_GetProductById) {
+    }
+    //修改信息
+    rpc UpdateProductInfo (product.In_UpdateProductInfo) returns (product.Out_UpdateProductInfo) {
+    }
+    //获取列表
+    rpc GetProducts (product.In_GetProducts) returns (product.Out_GetProducts) {
+    }
+    //删除列表
+    rpc DeleteProducts (product.In_DeleteProducts) returns (product.Out_DeleteProducts) {
+    }
+    //新建信息
+    rpc CreateProduct (product.In_CreateProduct) returns (product.Out_CreateProduct) {
+    }
+}
+
+service InventoryHandler {
+    //销售，锁定一个商品库存
+    rpc Sell (inventory.Request) returns (inventory.Response) {
+    }
+    //确认一个商品
+    rpc Confirm (inventory.Request) returns (inventory.Response) {
+    }
+    //去库存等等
+}
+service BrandHandler {
+    //获取信息
+    rpc GetBrandById (brand.In_GetBrandById) returns (brand.Out_GetBrandById) {
+    }
+    //修改信息
+    rpc UpdateBrandInfo (brand.In_UpdateBrandInfo) returns (brand.Out_UpdateBrandInfo) {
+    }
+    //获取列表
+    rpc GetBrands (brand.In_GetBrands) returns (brand.Out_GetBrands) {
+    }
+    //删除列表
+    rpc DeleteBrands (brand.In_DeleteBrands) returns (brand.Out_DeleteBrands) {
+    }
+    //新建信息
+    rpc CreateBrand (brand.In_CreateBrand) returns (brand.Out_CreateBrand) {
+    }
+}
+service ProductCategoryHandler {
+    //获取信息
+    rpc GetProductCategoryById (product_category.In_GetProductCategoryById) returns (product_category.Out_GetProductCategoryById) {
+    }
+    //修改信息
+    rpc UpdateProductCategoryInfo (product_category.In_UpdateProductCategoryInfo) returns (product_category.Out_UpdateProductCategoryInfo) {
+    }
+    //获取列表
+    rpc GetProductCategorys (product_category.In_GetProductCategorys) returns (product_category.Out_GetProductCategorys) {
+    }
+    //删除列表
+    rpc DeleteProductCategorys (product_category.In_DeleteProductCategorys) returns (product_category.Out_DeleteProductCategorys) {
+    }
+    //新建信息
+    rpc CreateProductCategory (product_category.In_CreateProductCategory) returns (product_category.Out_CreateProductCategory) {
+    }
+    //获取类别详情
+    rpc GetProductCategoryDetailsList (product_category.In_GetProductCategoryDetailsList) returns (product_category.Out_GetProductCategoryDetailsList) {
+    }
+}
+
+
+service ProductAttributeCategoryHandler {
+    //获取信息
+    rpc GetProductAttributeCategoryById (product_attribute_category.In_GetProductAttributeCategoryById) returns (product_attribute_category.Out_GetProductAttributeCategoryById) {
+    }
+    //修改信息
+    rpc UpdateProductAttributeCategoryInfo (product_attribute_category.In_UpdateProductAttributeCategoryInfo) returns (product_attribute_category.Out_UpdateProductAttributeCategoryInfo) {
+    }
+    //获取列表
+    rpc GetProductAttributeCategorys (product_attribute_category.In_GetProductAttributeCategorys) returns (product_attribute_category.Out_GetProductAttributeCategorys) {
+    }
+    //删除列表
+    rpc DeleteProductAttributeCategorys (product_attribute_category.In_DeleteProductAttributeCategorys) returns (product_attribute_category.Out_DeleteProductAttributeCategorys) {
+    }
+    //新建信息
+    rpc CreateProductAttributeCategory (product_attribute_category.In_CreateProductAttributeCategory) returns (product_attribute_category.Out_CreateProductAttributeCategory) {
+    }
+}
+
+
+service ProductAttributeHandler {
+    //获取信息
+    rpc GetProductAttributeById (product_attribute.In_GetProductAttributeById) returns (product_attribute.Out_GetProductAttributeById) {
+    }
+    //修改信息
+    rpc UpdateProductAttributeInfo (product_attribute.In_UpdateProductAttributeInfo) returns (product_attribute.Out_UpdateProductAttributeInfo) {
+    }
+    //获取列表
+    rpc GetProductAttributes (product_attribute.In_GetProductAttributes) returns (product_attribute.Out_GetProductAttributes) {
+    }
+    //删除列表
+    rpc DeleteProductAttributes (product_attribute.In_DeleteProductAttributes) returns (product_attribute.Out_DeleteProductAttributes) {
+    }
+    //新建信息
+    rpc CreateProductAttribute (product_attribute.In_CreateProductAttribute) returns (product_attribute.Out_CreateProductAttribute) {
+    }
+    rpc GetProductAttributeList (product_attribute.In_GetProductAttributeList) returns (product_attribute.Out_GetProductAttributeList) {
+    }
+
+}
+service ProductSkuStockHandler {
+    //获取信息
+    rpc GetProductSkuStockById (product_sku_stock.In_GetProductSkuStockById) returns (product_sku_stock.Out_GetProductSkuStockById) {
+    }
+    //修改信息
+    rpc UpdateProductSkuStockInfo (product_sku_stock.In_UpdateProductSkuStockInfo) returns (product_sku_stock.Out_UpdateProductSkuStockInfo) {
+    }
+    //获取列表
+    rpc GetProductSkuStocks (product_sku_stock.In_GetProductSkuStocks) returns (product_sku_stock.Out_GetProductSkuStocks) {
+    }
+    //删除列表
+    rpc DeleteProductSkuStocks (product_sku_stock.In_DeleteProductSkuStocks) returns (product_sku_stock.Out_DeleteProductSkuStocks) {
+    }
+    //新建信息
+    rpc CreateProductSkuStock (product_sku_stock.In_CreateProductSkuStock) returns (product_sku_stock.Out_CreateProductSkuStock) {
+    }
+    rpc GetSellSkuStock (product_sku_stock.In_GetSellSkuStock) returns (product_sku_stock.Out_GetSellSkuStock) {
+    }
+}
