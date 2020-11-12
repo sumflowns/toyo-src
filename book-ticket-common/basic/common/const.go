@@ -11,4 +11,3 @@ const (
 	ControlCenterAddress           = "192.168.10.101:9600"
 	POST_CHECK_CODE_FROM_MY_SERVER = "http://192.168.10.101:5002/verify/base64"
 )
-`
