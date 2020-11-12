@@ -1,4 +1,4 @@
-module gitee.com/qianxunke/surprise-shop-common
+module github.com/sumflowns/toyo-src/book-ticket-common
 
 go 1.13
 
@@ -23,4 +23,4 @@ require (
 	github.com/uber/jaeger-lib v2.2.0+incompatible // indirect
 )
 
-replace gitee.com/qianxunke/surprise-shop-common => ../surprise-shop-common
+replace github.com/sumflowns/toyo-src/book-ticket-common => ../book-ticket-commo
