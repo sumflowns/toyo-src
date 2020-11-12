@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-message Order_return_reason {
-    int64 id = 1; // bigint(20) NOT NULL AUTO_INCREMENT,
-    string name = 2; // varchar(100) DEFAULT NULL COMMENT '退货类型',
-    int64 sort = 3; // int(11) DEFAULT NULL,
-    int64 status = 4; // int(1) DEFAULT NULL COMMENT '状态：0->不启用；1->启用',
-    string create_time = 5; // datetime DEFAULT NULL COMMENT '添加时间',
-}
