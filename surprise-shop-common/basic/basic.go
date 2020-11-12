@@ -1,7 +1,7 @@
 package basic
 
 import (
-	"gitee.com/qianxunke/surprise-shop-common/basic/config"
+	"github.com/sumflowns/toyo-src/surprise-shop-common/basic/config"
 )
 
 var (
