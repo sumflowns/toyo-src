@@ -6,7 +6,7 @@ import (
 	"github.com/sumflowns/toyo-src/book-ticket-common/basic/common"
 	"github.com/sumflowns/toyo-src/book-ticket-common/basic/config"
 	"github.com/sumflowns/toyo-src/book-ticket-common/basic/lib/tracer"
-	auth "github.com/sumflowns/toyo-src/book-ticket-common/pr   oto/auth"
+	auth "github.com/sumflowns/toyo-src/book-ticket-common/proto/auth"
 	"github.com/micro/cli"
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/registry"
