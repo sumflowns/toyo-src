@@ -1,7 +1,7 @@
 user_srv:
   user_srv_app:
     name: com.book.ticket.srv.user
-    address: 127.0.0.1
+    address: 0.0.0.0
     port: 9100
   consul:
     enabled: true
@@ -22,4 +22,4 @@ user_srv:
     sentinel:
       enabled: false
       master: bookMaster
-      nodes: 192.168.10.101:16379,192.168.10.101:26379,192.168.10.101:36379
+      nodes: 192.168.10.102:16379,192.168.10.103:26379
