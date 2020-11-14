@@ -47,7 +47,7 @@ func (ac *allowedCors) Handler() plugin.Handler {
 
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			cors.New(cors.Options{
-				AllowedOrigins:   []string{"*", "http://127.0.0.1"},
+				AllowedOrigins:   []string{"*", "http://0.0.0.0"},
 				AllowedMethods:   []string{"POST", "GET", "OPTIONS", "PUT", "DELETE"},
 				AllowedHeaders:   []string{"Content-Type", "AccessToken", "Origin", "Accept", "X-Requested-With", "Authorization", "Token", "Content-Length"},
 				AllowCredentials: true,
