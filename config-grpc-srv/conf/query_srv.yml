@@ -6,7 +6,7 @@ query_srv:
   consul:
     enabled: true
     host: 127.0.0.1
-    port: 8500
+    port: 32655
   db:
     mysql:
       enabled: true
