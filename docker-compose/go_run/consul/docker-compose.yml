@@ -19,5 +19,5 @@ services:
     network_mode: mynet
     restart: always
     ports:
-      - 32655:32655
+      - 8500:8500
     command: agent -client=0.0.0.0 -retry-join=consul1 -ui -node=client1 -datacenter=dc1

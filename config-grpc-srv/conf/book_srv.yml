@@ -6,11 +6,11 @@ book_srv:
   consul:
     enabled: true
     host: 192.168.10.101
-    port: 32655
+    port: 8500
   db:
     mysql:
       enabled: true
-      url: root:root@(192.168.10.101:3306)/book_ticket_task?charset=utf8&parseTime=true&loc=Asia%2FShanghai
+      url: root:root@(192.168.6.233:3306)/book_ticket_task?charset=utf8&parseTime=true&loc=Asia%2FShanghai
       maxIdleConnection: 50
       maxOpenConnection: 50
   redis:

@@ -15,11 +15,11 @@ user_srv:
       maxOpenConnection: 30
   redis:
     enabled: true
-    conn: 192.168.10.101:30033
+    conn: 192.168.10.101:32655
     dbNum: 0
     password: 584ab235-0e5e-11e9-a088-0c9d92bf536f
     timeout: 3000
     sentinel:
       enabled: false
       master: bookMaster
-      nodes: 192.168.10.102:30033,192.168.10.103:30033
+      nodes: 192.168.10.102:32655,192.168.10.103:32655
