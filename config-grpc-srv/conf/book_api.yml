@@ -10,4 +10,4 @@ book_api:
   consul:
     enabled: true
     host: 192.168.10.101
-    port: 8500
+    port: 32655
