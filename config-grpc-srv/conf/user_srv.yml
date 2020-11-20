@@ -6,7 +6,7 @@ user_srv:
   consul:
     enabled: true
     host: 192.168.10.101
-    port: 32655
+    port: 32657
   db:
     mysql:
       enabled: true
@@ -15,11 +15,11 @@ user_srv:
       maxOpenConnection: 30
   redis:
     enabled: true
-    conn: 192.168.10.101:32655
+    conn: 192.168.10.101:32657
     dbNum: 0
     password: 584ab235-0e5e-11e9-a088-0c9d92bf536f
     timeout: 3000
     sentinel:
       enabled: false
       master: bookMaster
-      nodes: 192.168.10.102:32655,192.168.10.103:32655
+      nodes: 192.168.10.102:32657,192.168.10.103:32657

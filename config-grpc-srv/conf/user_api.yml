@@ -10,4 +10,4 @@ user_api:
   consul:
     enabled: true
     host: 192.168.10.101
-    port: 32655
+    port: 32657
