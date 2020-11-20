@@ -9,7 +9,7 @@ auth_srv:
     port: 32655
   redis:
     enabled: true
-    conn: 192.168.10.101:6379
+    conn: 192.168.10.101:30033
     dbNum: 0
     password:
     timeout: 6000
