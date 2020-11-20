@@ -9,6 +9,7 @@ import (
 	"github.com/sumflowns/toyo-src/book-ticket-common/basic/common"
 	"github.com/sumflowns/toyo-src/book-ticket-common/basic/config"
 	"github.com/sumflowns/toyo-src/book-ticket-common/basic/lib/tracer"
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/micro/cli"
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/registry"

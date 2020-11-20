@@ -28,3 +28,4 @@ require (
 )
 
 replace github.com/sumflowns/toyo-src/book-ticket-common => ../book-ticket-common
+replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
