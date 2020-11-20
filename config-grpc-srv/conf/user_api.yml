@@ -1,7 +1,7 @@
 user_api:
   user_api_app:
     name: com.book.ticket.api.user
-    address: 127.0.0.1
+    address: 192.168.10.101
     port: 9099
   url_whitelist:
     - /user/login
@@ -9,5 +9,5 @@ user_api:
     - /user/code
   consul:
     enabled: true
-    host: 127.0.0.1
+    host: 192.168.10.101
     port: 32655

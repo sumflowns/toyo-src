@@ -30,7 +30,7 @@ type userCfg struct {
 	common.AppCfg
 }
 
-////go run main.go plugin.go --broker=nats --broker_address=127.0.0.1:4222
+////go run main.go plugin.go --broker=nats --broker_address=192.168.10.101:4222
 func main() {
 	initCfg()
 	t, io, err := tracer.NewTracer(cfg.Name, "")

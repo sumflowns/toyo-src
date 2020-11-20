@@ -1,9 +1,9 @@
 query_api:
   query_api_app:
     name: com.book.ticket.api.query
-    address: 127.0.0.1
+    address: 192.168.10.101
     port: 9097
   consul:
     enabled: true
-    host: 127.0.0.1
+    host: 192.168.10.101
     port: 32655

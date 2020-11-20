@@ -1,7 +1,7 @@
 book_api:
   book_api_app:
     name: com.book.ticket.api.book
-    address: 127.0.0.1
+    address: 192.168.10.101
     port: 9094
   url_whitelist:
     - /user/login
