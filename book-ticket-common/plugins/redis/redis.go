@@ -20,7 +20,7 @@ var (
 type redis struct {
 	Enabled  bool           `json:"enabled"`
 	Conn     string         `json:"conn"`
-	Password string         `json:"password"`
+	Password string         `json:"584ab235-0e5e-11e9-a088-0c9d92bf536f"`
 	DBNum    int            `json:"dbNum"`
 	Timeout  int            `json:"timeout"`
 	Sentinel *RedisSentinel `json:"sentinel"`
