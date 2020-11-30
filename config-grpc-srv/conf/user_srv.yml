@@ -10,7 +10,7 @@ user_srv:
   db:
     mysql:
       enabled: true
-      url: root:root@(192.168.6.233:3306)/book_ticket_user?charset=utf8&parseTime=true&loc=Asia%2FShanghai
+      url: user:user@(192.168.6.233:3306)/book_ticket_user?charset=utf8&parseTime=true&loc=Asia%2FShanghai
       maxIdleConnection: 30
       maxOpenConnection: 30
   redis:
