@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package task;
 
+option go_package = "proto/task";
+
 service TaskService {
       //获取任务详细信息
        rpc GetTaskInfo (In_GetTaskInfo) returns (Out_GetTaskInfo) {
