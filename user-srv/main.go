@@ -15,6 +15,7 @@ import (
 	"github.com/micro/go-micro/util/log"
 	"github.com/micro/go-plugins/config/source/grpc"
 	"github.com/micro/go-plugins/registry/consul"
+	_"github.com/go-sql-driver/mysql"
 	ocplugin "github.com/micro/go-plugins/wrapper/trace/opentracing"
 	opentracing "github.com/opentracing/opentracing-go"
 
