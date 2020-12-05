@@ -4,7 +4,7 @@ import (
 	"context"
 	auth "github.com/sumflowns/toyo-src/book-ticket-common/proto/auth"
 	"github.com/micro/go-micro/util/log"
-	"surprise-shop-auth/model/access"
+	"auth/model/access"
 )
 
 //声明service
