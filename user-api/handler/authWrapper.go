@@ -20,10 +20,10 @@ type Subject struct {
 func AuthWrapper(c *gin.Context) {
 	log.Logf("[AuthWrapper]:请求 URL: %v", c.Request.RequestURI)
 
-	var url = []string{"user/getcode"} //c.Request.RequestURI 白名单 不需要传token参数的url
+/*	var url = []string{"user/getcode"} //c.Request.RequestURI 白名单 不需要传token参数的url
 	common.WhileList = &common.UrlWhileList{  Url_whitelist: url,
 		}
-
+*/
 	if common.WhileList.IsInWileList(c.Request.RequestURI) {
 		//假如该请求是登陆后
 		ck := c.Request.Header.Get(common.RememberMeCookieName)
