@@ -3,7 +3,7 @@ package book_handler
 import (
 	"book-srv/modules/book/book_service"
 	"context"
-	"github.com/sumflowns/toyo-src/book-ticket-common/proto/task"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/task"
 	"log"
 )
 

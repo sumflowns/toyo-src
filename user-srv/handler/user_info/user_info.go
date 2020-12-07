@@ -3,7 +3,7 @@ package user_info
 import (
 	userIml "book-user_srv/model/user_info"
 	"context"
-	userProto "github.com/sumflowns/toyo-src/book-ticket-common/proto/user"
+	userProto "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/user"
 	"github.com/micro/go-micro/util/log"
 )
 

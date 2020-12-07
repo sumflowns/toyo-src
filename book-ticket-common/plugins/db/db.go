@@ -1,7 +1,7 @@
 package db
 
 import (
-	"github.com/sumflowns/toyo-src/book-ticket-common/basic/config"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/config"
 	"github.com/jinzhu/gorm"
 	"github.com/kataras/golog"
 	"github.com/micro/go-micro/util/log"

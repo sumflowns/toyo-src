@@ -3,7 +3,7 @@ package elasticsearch
 import (
 	"context"
 	"fmt"
-	"github.com/sumflowns/toyo-src/book-ticket-common/basic/config"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/config"
 	"github.com/kataras/golog"
 	"github.com/micro/go-micro/util/log"
 	"github.com/olivere/elastic/v7"

@@ -2,7 +2,7 @@ package handler
 
 import (
 	"book-query-srv/handler/train"
-	"github.com/sumflowns/toyo-src/book-ticket-common/proto/ticket"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/ticket"
 	"github.com/micro/go-micro/server"
 	"log"
 )

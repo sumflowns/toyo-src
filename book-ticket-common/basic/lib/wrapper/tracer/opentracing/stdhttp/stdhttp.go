@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	status_code "github.com/sumflowns/toyo-src/book-ticket-common/basic/lib/http"
+	status_code "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/lib/http"
 
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"

@@ -2,7 +2,7 @@ package book_service
 
 import (
 	"fmt"
-	"github.com/sumflowns/toyo-src/book-ticket-common/proto/task"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/task"
 	"sync"
 )
 

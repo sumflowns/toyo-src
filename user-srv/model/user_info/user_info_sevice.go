@@ -2,8 +2,8 @@ package user_info
 
 import (
 	"fmt"
-	"github.com/sumflowns/toyo-src/book-ticket-common/plugins/db"
-	userInfoProto "github.com/sumflowns/toyo-src/book-ticket-common/proto/user"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/plugins/db"
+	userInfoProto "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/user"
 	"sync"
 )
 

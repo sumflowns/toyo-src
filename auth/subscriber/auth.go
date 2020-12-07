@@ -4,7 +4,7 @@ import (
 	"context"
 	"github.com/micro/go-micro/util/log"
 
-	auth "github.com/sumflowns/toyo-src/book-ticket-common/proto/auth"
+	auth "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/auth"
 )
 
 type Auth struct{}

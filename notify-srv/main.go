@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/sumflowns/toyo-src/book-ticket-common/ticket/static/api"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/static/api"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	"io/ioutil"
 	"log"

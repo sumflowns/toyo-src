@@ -2,11 +2,11 @@ package boo_core
 
 import (
 	"fmt"
-	"github.com/sumflowns/toyo-src/book-ticket-common/basic/utils/conversation"
-	"github.com/sumflowns/toyo-src/book-ticket-common/proto/task"
-	bookBean "github.com/sumflowns/toyo-src/book-ticket-common/ticket/book/bean"
-	"github.com/sumflowns/toyo-src/book-ticket-common/ticket/login"
-	"github.com/sumflowns/toyo-src/book-ticket-common/ticket/query/bean"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/utils/conversation"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/task"
+	bookBean "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/book/bean"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/login"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/query/bean"
 	"log"
 	"net/http"
 	"strings"

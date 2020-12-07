@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/sumflowns/toyo-src/book-ticket-common/plugins/db"
-	ticketProto "github.com/sumflowns/toyo-src/book-ticket-common/proto/ticket"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/plugins/db"
+	ticketProto "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/ticket"
 	r "github.com/go-redis/redis"
 	"log"
 )

@@ -2,7 +2,7 @@ package service
 
 import (
 	"fmt"
-	ticketProto "github.com/sumflowns/toyo-src/book-ticket-common/proto/ticket"
+	ticketProto "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/ticket"
 	"sync"
 )
 

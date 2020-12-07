@@ -3,7 +3,7 @@ package query
 import (
 	"errors"
 	"fmt"
-	"github.com/sumflowns/toyo-src/book-ticket-common/ticket/query/bean"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/query/bean"
 
 	"strings"
 )

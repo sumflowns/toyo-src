@@ -2,12 +2,12 @@ package access
 
 import (
 	"fmt"
-	"github.com/sumflowns/toyo-src/book-ticket-common/basic/config"
-	"github.com/sumflowns/toyo-src/book-ticket-common/plugins/jwt"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/config"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/plugins/jwt"
 	"github.com/micro/go-micro/util/log"
 	"sync"
 
-	"github.com/sumflowns/toyo-src/book-ticket-common/plugins/redis"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/plugins/redis"
 	r "github.com/go-redis/redis"
 )
 

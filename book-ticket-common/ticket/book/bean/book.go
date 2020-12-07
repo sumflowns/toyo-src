@@ -3,8 +3,8 @@ package bean
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/sumflowns/toyo-src/book-ticket-common/proto/task"
-	"github.com/sumflowns/toyo-src/book-ticket-common/ticket/query/bean"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/task"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/query/bean"
 	"log"
 	"net/url"
 	"strings"

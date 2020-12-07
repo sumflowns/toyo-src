@@ -2,7 +2,7 @@ package handler
 
 import (
 	"book-user_srv/handler/user_info"
-	"github.com/sumflowns/toyo-src/book-ticket-common/proto/user"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/user"
 	"github.com/micro/go-micro/server"
 	"github.com/micro/go-micro/util/log"
 )
