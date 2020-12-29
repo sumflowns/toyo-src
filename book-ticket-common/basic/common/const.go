@@ -9,5 +9,5 @@ const (
 	Topic_Product_Es_Delete        = "com.surprise.shop.topic.product.delete"
 	Topic_Product_Es_Update        = "com.surprise.shop.topic.product.update"
 	ControlCenterAddress           = "0.0.0.0:9600"
-	POST_CHECK_CODE_FROM_MY_SERVER = "http://192.168.10.101:5002/verify/base64"
+	POST_CHECK_CODE_FROM_MY_SERVER = "http://120.92.155.226:7008/verify/base64"
 )
