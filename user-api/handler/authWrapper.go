@@ -2,11 +2,10 @@ package handler
 
 import (
 	"fmt"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/api_common"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/common"
-	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"github.com/micro/go-micro/util/log"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/api_common"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/common"
 	"net/http"
 )
 
@@ -20,9 +19,13 @@ type Subject struct {
 func AuthWrapper(c *gin.Context) {
 	log.Logf("[AuthWrapper]:请求 URL: %v", c.Request.RequestURI)
 
-/*	var url = []string{"user/getcode"} //c.Request.RequestURI 白名单 不需要传token参数的url
+/*
+	//调试
+	var url = []string{"/api/user/code","/api/user/login","/user/code","/user/login"} //c.Request.RequestURI 白名单 不需要传token参数的url
 	common.WhileList = &common.UrlWhileList{  Url_whitelist: url,
-		}
+	}
+	log.Logf("请求路径",c.Request.RequestURI)
+	log.Logf("WhileList",common.WhileList)
 */
 	if common.WhileList.IsInWileList(c.Request.RequestURI) {
 		//假如该请求是登陆后
