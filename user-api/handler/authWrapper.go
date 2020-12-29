@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/micro/go-micro/util/log"
+	"github.com/dgrijalva/jwt-go"
 	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/api_common"
 	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/common"
 	"net/http"
