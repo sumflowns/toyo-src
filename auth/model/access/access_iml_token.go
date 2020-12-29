@@ -12,7 +12,7 @@ var (
 	// tokenExpiredDate app token过期日期 7天
 	tokenExpiredDate = 3600 * 24 * 7 * time.Second
 	// tokenIDKeyPrefix tokenID 前缀
-	jwt.tokenIDKeyPrefix  = "token:auth:id:"
+	tokenIDKeyPrefix  = "token:auth:id:"
 	tokenExpiredTopic = "com.surprise.shop.topic.auth.tokenExpired"
 )
 
