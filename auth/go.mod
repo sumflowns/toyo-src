@@ -1,4 +1,4 @@
-module auth
+module surprise-shop-auth
 
 go 1.13
 

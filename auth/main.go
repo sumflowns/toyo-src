@@ -15,8 +15,8 @@ import (
 	"github.com/micro/go-plugins/registry/consul"
 	ocplugin "github.com/micro/go-plugins/wrapper/trace/opentracing"
 	"github.com/opentracing/opentracing-go"
-	"auth/handler"
-	"auth/model"
+	"surprise-shop-auth/handler"
+	"surprise-shop-auth/model"
 	"time"
 )
 

@@ -1,6 +1,6 @@
 package model
 
-import "auth/model/access"
+import "surprise-shop-auth/model/access"
 
 // Init 初始化模型层
 func Init() {
