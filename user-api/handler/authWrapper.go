@@ -20,8 +20,8 @@ type Subject struct {
 func AuthWrapper(c *gin.Context) {
 	log.Logf("[AuthWrapper]:请求 URL: %v", c.Request.RequestURI)
 
-/*
-	//调试
+
+/*	//调试
 	var url = []string{"/api/user/code","/api/user/login","/user/code","/user/login"} //c.Request.RequestURI 白名单 不需要传token参数的url
 	common.WhileList = &common.UrlWhileList{  Url_whitelist: url,
 	}
