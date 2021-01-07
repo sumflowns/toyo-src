@@ -4,11 +4,11 @@ import (
 	"book-user_api/m_client"
 	"context"
 	"errors"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/api_common"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/common"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/auth"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/user"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/api_common"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/common"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/auth"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/user"
 	"github.com/gin-gonic/gin"
 	"github.com/micro/go-micro/client"
 	"log"
@@ -249,5 +249,6 @@ func (userApiService *UserApiService) AppUpdateInfo(c *gin.Context) {
 	requestParams := &user.In_UpdateInfo{}
 
 	rsp, _ := userApiService.serviceClient.GetUpdateInfo(context.TODO(), requestParams)
+	log.Fatal("调用服务完成")
 	api_common.SrvResultDone(c, rsp.UpdateInfo, &api_common.Error{Code: rsp.Error.Code, Message: rsp.Error.Message})
 }
