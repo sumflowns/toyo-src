@@ -249,5 +249,6 @@ func (userApiService *UserApiService) AppUpdateInfo(c *gin.Context) {
 	requestParams := &user.In_UpdateInfo{}
 
 	rsp, _ := userApiService.serviceClient.GetUpdateInfo(context.TODO(), requestParams)
+	log.Fatal("调用服务完成")
 	api_common.SrvResultDone(c, rsp.UpdateInfo, &api_common.Error{Code: rsp.Error.Code, Message: rsp.Error.Message})
 }

@@ -3,11 +3,6 @@ package main
 import (
 	"book-query-api/handler"
 	"fmt"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/common"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/config"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/lib/tracer"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/lib/wrapper/tracer/opentracing/gin2micro"
 	"github.com/gin-gonic/gin"
 	"github.com/micro/cli"
 	"github.com/micro/go-micro/registry"
@@ -15,7 +10,11 @@ import (
 	"github.com/micro/go-micro/web"
 	"github.com/micro/go-plugins/config/source/grpc"
 	"github.com/micro/go-plugins/registry/consul"
-	"github.com/opentracing/opentracing-go"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/common"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/config"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/lib/tracer"
+	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/lib/wrapper/tracer/opentracing/gin2micro"
 	"time"
 )
 
