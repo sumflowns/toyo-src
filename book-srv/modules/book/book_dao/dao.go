@@ -2,8 +2,8 @@ package book_dao
 
 import (
 	"fmt"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/plugins/db"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/task"
+	"github.com/sumflowns/toyo-src/book-ticket-common/plugins/db"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/task"
 	"sync"
 )
 

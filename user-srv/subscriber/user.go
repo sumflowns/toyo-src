@@ -3,7 +3,7 @@ package subscriber
 import (
 	"book-user_srv/model/user_info"
 	"context"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/user"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/user"
 	"github.com/micro/go-micro/util/log"
 )
 

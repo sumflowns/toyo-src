@@ -1,5 +1,5 @@
 package main
 
 import (
-	_ "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/plugins/redis"
+	_ "github.com/sumflowns/toyo-src/book-ticket-common/plugins/redis"
 )

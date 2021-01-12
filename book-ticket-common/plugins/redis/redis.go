@@ -4,8 +4,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/config"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/config"
 	r "github.com/go-redis/redis"
 	"github.com/micro/go-micro/util/log"
 )

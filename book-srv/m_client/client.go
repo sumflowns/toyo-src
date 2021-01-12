@@ -1,8 +1,8 @@
 package m_client
 
 import (
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic"
-	user "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/user"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic"
+	user "github.com/sumflowns/toyo-src/book-ticket-common/proto/user"
 	"github.com/micro/go-micro/client"
 )
 

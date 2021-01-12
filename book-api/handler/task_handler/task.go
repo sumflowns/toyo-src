@@ -2,10 +2,10 @@ package task_handler
 
 import (
 	"context"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/api_common"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/utils/string_utl"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/task"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/api_common"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/utils/string_utl"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/task"
 	"github.com/gin-gonic/gin"
 	"github.com/micro/go-micro/client"
 	"net/http"

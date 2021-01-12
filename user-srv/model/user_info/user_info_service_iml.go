@@ -5,14 +5,14 @@ import (
 	"book-user_srv/utils"
 	"context"
 	"fmt"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/common/uuid"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/notice/sms"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/plugins/db"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/auth"
-	userInfoProto "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/user"
-	bookBean "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/book/bean"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/book/boo_core"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/login"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/common/uuid"
+	"github.com/sumflowns/toyo-src/book-ticket-common/notice/sms"
+	"github.com/sumflowns/toyo-src/book-ticket-common/plugins/db"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/auth"
+	userInfoProto "github.com/sumflowns/toyo-src/book-ticket-common/proto/user"
+	bookBean "github.com/sumflowns/toyo-src/book-ticket-common/ticket/book/bean"
+	"github.com/sumflowns/toyo-src/book-ticket-common/ticket/book/boo_core"
+	"github.com/sumflowns/toyo-src/book-ticket-common/ticket/login"
 	"log"
 	"math/rand"
 	"net/http"
@@ -544,5 +544,6 @@ func (s *userInfoServiceImp) GetUpdateInfo(req *userInfoProto.In_UpdateInfo) (rs
 		return
 	}
 	rsp.Error = &userInfoProto.Error{Code: http.StatusOK, Message: "ok"}
+	log.Fatal("[返回值] : %v",rsp)
 	return
 }

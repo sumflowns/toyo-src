@@ -1,7 +1,7 @@
 package basic
 
 import (
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/config"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/config"
 )
 
 var (

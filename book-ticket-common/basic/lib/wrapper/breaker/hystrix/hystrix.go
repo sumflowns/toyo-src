@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	status_code "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/lib/http"
+	status_code "github.com/sumflowns/toyo-src/book-ticket-common/basic/lib/http"
 
 	"github.com/afex/hystrix-go/hystrix"
 )

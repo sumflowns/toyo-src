@@ -1,9 +1,9 @@
 package login
 
 import (
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/utils/conversation"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/user"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/ticket/check_code"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/utils/conversation"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/user"
+	"github.com/sumflowns/toyo-src/book-ticket-common/ticket/check_code"
 	"log"
 	"net/http"
 )

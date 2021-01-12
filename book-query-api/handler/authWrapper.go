@@ -3,8 +3,8 @@ package handler
 import (
 	"book-query-api/m_client"
 	"context"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/common"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/auth"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/common"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/auth"
 	"github.com/gin-gonic/gin"
 	"github.com/micro/go-micro/util/log"
 )

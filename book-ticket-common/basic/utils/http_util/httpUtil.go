@@ -2,7 +2,7 @@ package http_util
 
 import (
 	"encoding/json"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/utils/conversation"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/utils/conversation"
 	"net/http"
 	"strings"
 )

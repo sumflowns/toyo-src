@@ -3,7 +3,7 @@ package train
 import (
 	"book-query-srv/modules/train/service"
 	"context"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/ticket"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/ticket"
 	"log"
 )
 

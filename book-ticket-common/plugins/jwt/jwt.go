@@ -1,6 +1,6 @@
 package jwt
 
-import "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic"
+import "github.com/sumflowns/toyo-src/book-ticket-common/basic"
 
 // Jwt 配置 接口
 type Jwt struct {

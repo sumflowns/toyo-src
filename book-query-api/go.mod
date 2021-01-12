@@ -2,10 +2,10 @@ module book-query-api
 
 go 1.13
 
-replace github.com/sumflowns/toyo-src/tree/master/book-ticket-common => ../book-ticket-common
+replace github.com/sumflowns/toyo-src/book-ticket-common => ../book-ticket-common
 
 require (
-	github.com/sumflowns/toyo-src/tree/master/book-ticket-common v0.0.0-00010101000000-000000000000
+	github.com/sumflowns/toyo-src/book-ticket-common v0.0.0-00010101000000-000000000000
 	github.com/afex/hystrix-go v0.0.0-20180502004556-fa1af6a1f4f5
 	github.com/gin-gonic/gin v1.5.0
 	github.com/micro/go-micro v1.17.1

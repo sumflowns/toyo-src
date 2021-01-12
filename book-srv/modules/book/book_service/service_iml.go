@@ -3,7 +3,7 @@ package book_service
 import (
 	"book-srv/modules/book/book_dao"
 	"fmt"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/task"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/task"
 	"log"
 	"net/http"
 	"strings"

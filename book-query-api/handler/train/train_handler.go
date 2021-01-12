@@ -3,9 +3,9 @@ package train
 import (
 	"context"
 	"fmt"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/api_common"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/ticket"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/api_common"
+	"github.com/sumflowns/toyo-src/book-ticket-common/proto/ticket"
 	"github.com/gin-gonic/gin"
 	"github.com/micro/go-micro/client"
 	"time"

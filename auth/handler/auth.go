@@ -2,7 +2,7 @@ package handler
 
 import (
 	"context"
-	auth "github.com/sumflowns/toyo-src/tree/master/book-ticket-common/proto/auth"
+	auth "github.com/sumflowns/toyo-src/book-ticket-common/proto/auth"
 	"github.com/micro/go-micro/util/log"
 	"surprise-shop-auth/model/access"
 )

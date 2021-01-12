@@ -2,7 +2,7 @@ package api_common
 
 import (
 	"fmt"
-	"github.com/sumflowns/toyo-src/tree/master/book-ticket-common/basic/utils/string_utl"
+	"github.com/sumflowns/toyo-src/book-ticket-common/basic/utils/string_utl"
 	"github.com/gin-gonic/gin"
 	"github.com/micro/go-micro/util/log"
 	"net/http"

@@ -3,7 +3,7 @@ module book-user_srv
 go 1.13
 
 require (
-	github.com/sumflowns/toyo-src/tree/master/book-ticket-common v0.0.0-00010101000000-000000000000
+	github.com/sumflowns/toyo-src/book-ticket-common v0.0.0-00010101000000-000000000000
 	github.com/go-redis/redis v6.15.6+incompatible
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/micro/cli v0.2.0
@@ -12,4 +12,4 @@ require (
 	github.com/opentracing/opentracing-go v1.1.0
 )
 
-replace github.com/sumflowns/toyo-src/tree/master/book-ticket-common => ../book-ticket-common
+replace github.com/sumflowns/toyo-src/book-ticket-common => ../book-ticket-common

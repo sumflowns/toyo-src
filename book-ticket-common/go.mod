@@ -1,4 +1,4 @@
-module github.com/sumflowns/toyo-src/tree/master/book-ticket-common
+module github.com/sumflowns/toyo-src/book-ticket-common
 
 go 1.13
 
@@ -27,5 +27,5 @@ require (
 	github.com/uber/jaeger-lib v2.2.0+incompatible // indirect
 )
 
-replace github.com/sumflowns/toyo-src/tree/master/book-ticket-common => ../book-ticket-common
+replace github.com/sumflowns/toyo-src/book-ticket-common => ../book-ticket-common
 replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
