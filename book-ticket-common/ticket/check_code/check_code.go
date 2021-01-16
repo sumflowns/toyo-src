@@ -1,6 +1,7 @@
 package check_code
 
 import (
+	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -11,6 +12,7 @@ import (
 	"io/ioutil"
 	"log"
 	"math/rand"
+	"mime/multipart"
 	"net/http"
 	"net/url"
 	"strconv"
@@ -34,6 +36,10 @@ type CheckResponse struct {
 	Code    int64
 	Data    []string
 	Massage string
+}
+type ImgCheck struct {
+	Msg string
+	Result []int
 }
 
 //获取验证码
@@ -102,24 +108,47 @@ func checkCodeIdentify(vCode VCode) (result string, err error) {
 		}
 	}()
 	data := url.Values{}
-	data.Add("imageFile", vCode.Image)
-	resp, err := http.PostForm(common.POST_CHECK_CODE_FROM_MY_SERVER, data)
+	data.Add("img", vCode.Image)
+	payload := &bytes.Buffer{}
+	writer := multipart.NewWriter(payload)
+	_ = writer.WriteField("img", vCode.Image)
+	err = writer.Close()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	client := &http.Client {
+	}
+	req, err := http.NewRequest("POST", common.POST_CHECK_CODE_FROM_MY_SERVER, payload)
+	req.Header.Set("Content-Type", writer.FormDataContentType())
+	resp, err := client.Do(req)
+
+	//resp, err := http.PostForm(common.POST_CHECK_CODE_FROM_MY_SERVER, data)
+
 	if err != nil {
 		return
 	}
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
+	log.Println(string(body))
 	if err != nil {
 		log.Println(err)
 		return
 	}
-	checkResponse := CheckResponse{}
-	err = json.Unmarshal(body, &checkResponse)
+	//checkResponse := CheckResponse{}
+	imgCheck:=ImgCheck{}
+	err = json.Unmarshal(body, &imgCheck)
 	if err != nil {
 		log.Printf("error: %s", err)
 		return
 	}
-	return simulatedClick(checkResponse.Data)
+	log.Println(imgCheck)
+
+	var codeList []string
+	for k, onset := range imgCheck.Result{
+		codeList[k]=string(onset)
+	}
+	return simulatedClick(codeList)
 }
 
 //模拟用户点击验证码

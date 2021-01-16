@@ -4,6 +4,7 @@ import (
 	"github.com/sumflowns/toyo-src/book-ticket-common/basic/config"
 	"github.com/jinzhu/gorm"
 	"github.com/kataras/golog"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/micro/go-micro/util/log"
 	"sync"
 )
